@@ -9,7 +9,7 @@ const compiler = webpack(config)
 
 app.use(webpackDevMiddleware(compiler, {
     publicPath: config.output.publicPath,
-    quiet: false,
+    quiet: true,
     noInfo: true
 }))
 
